@@ -13,145 +13,146 @@ html
 	-webkit-text-size-adjust:none;
 	background:#FFFFFF;
 }
-body
+
+.select
 {
-	padding:5px;
-}
-select
-{
-	height:20px;
+	height:24px;
 	line-height:20px;
 }
-.left
-{
-	float:left;
-}
-.freeze
-{
-	position:absolute;
-	text-align:center;
-	background:#343434;
-	color:#FFFFFF;
-	font-size:26px;
-	font-weight:bold;
-	filter:alpha(opacity=60);
-	opacity:0.6;
-}
+
 .vtop
 {
 	vertical-align:middle;
 	margin-top:-1px;
 }
-/*插件*/
-.plugin
+
+/*输入框高度*/
+.txt
 {
-	width:500px;
-	height:300px;
+	color: #787073;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	width:140px;
+	height: 22px;
 }
-fieldset
-{
-	display:block;
+
+.title-font{
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
 }
-/*本地配置*/
-.localconfig
-{
-	width:480px;
-	padding:10px;
-	border:1px solid #7F9DB9;
+.title{
+	background-color: darkcyan;
+	height: 30px;
+	padding-left: 10px;
 }
-.localconfig .tt
+/*按钮样式*/
+.btn
 {
-	width:125px;
-}
-.localconfig .txt
-{
-	width:310px;
-}
-.localconfig .btn
-{
-	width:45px;
-	height:22px;
+	width:100px;
+	height:24px;
 	line-height:18px;
+	background-color: #36afa0;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
-.localconfig .sel
+.btn:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn2
 {
-	width:120px;
+	width:100px;
+	height:24px;
+	line-height:18px;
+	background-color: #36afa0;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.btn2:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*选择框样式*/
+.sel
+{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	width:105px;
 }
 /*登录*/
 .login
 {
-	width:480px;
-	padding:10px;
-	border:1px solid #7F9DB9;	
+	float:left;
+	width:42%;
+	height:200px;
+	margin-left: 70px;
+	margin-top: 20px;
+	background-color: #becbb5;
+	border:1px solid #7F9DB9;
+}
+.login:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .login .tt
 {
-	width:100px;
+	width:80px;
+	font-size: 14px;
+	color: #131313;
 }
-.login .txt
-{
-	width:130px;
-}
-.login .btn
-{
-	width:45px;
-	height:22px;
-	line-height:18px;
-}
-.login .btn2
-{
-	width:100px;
-	height:22px;
-	line-height:18px;
-}
+
 .login .sel
 {
-	width:130px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	width:140px;
 }
 .login .sel2
 {
-	width:65px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	width:140px;
 }
-/*数字通道*/
-.ipchannel
-{
-	width:480px;
-	padding:10px;
-	border:1px solid #7F9DB9;	
-}
-.ipchannel .btn
-{
-	width:130px;
-	height:22px;
-	line-height:18px;
-}
-.ipchannel .digitaltdiv
-{
-	height:100px;
-	overflow:hidden;
-	overflow-y:auto;
-	border:1px solid #7F9DB9;
-	font-size:11px;
-}
-.ipchannel .digitalchannellist th, .ipchannel .digitalchannellist td
-{
-	padding:2px;
-	border:1px solid #7F9DB9;
-	border-collapse:collapse;
-	white-space:nowrap;
-}
+
 /*预览*/
 .preview
 {
-	width:450px;
-	padding:10px;
-	padding-top:0;
-	margin-left:10px;
+	float: right;
+	width:42%;
+	height:200px;
+	margin-top: 20px;
+	margin-right: 70px;
+	background-color: #becbb5;
 	border:1px solid #7F9DB9;
+}
+.preview:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .preview .tt
 {
 	width:60px;
+	font-size: 14px;
+	color: #131313;
 }
 .preview .txt
 {
@@ -176,10 +177,17 @@ fieldset
 /*云台*/
 .ptz
 {
-	width:450px;
-	padding:10px;
-	margin-left:10px;
+	float: left;
+	width:20%;
+	height: 450px;
+	margin-top: 20px;
+	margin-left:70px;
+	margin-bottom: 20px;
 	border:1px solid #7F9DB9;
+	background-color: #becbb5;
+}
+.ptz:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .ptz .tt
 {
@@ -197,47 +205,27 @@ fieldset
 }
 .ptz .btn2
 {
-    width:60px;
-    height:22px;
-    line-height:18px;
-}
-.ptz .sel
-{
-	width:65px;
-}
-/*视频参数*/
-.videoparam
-{
-	width:450px;
-	padding:10px;
-	margin-left:10px;
-	border:1px solid #7F9DB9;
-}
-.videoparam .tt
-{
 	width:60px;
-}
-.videoparam .txt
-{
-	width:60px;
-}
-.videoparam .btn
-{
-	width:45px;
 	height:22px;
 	line-height:18px;
 }
-.videoparam .sel
+.ptz .sel
 {
 	width:65px;
 }
 /*回放*/
 .playback
 {
-	width:450px;
-	padding:10px;
-	margin-left:10px;
+	float: left;
+	width:30%;
+	height: 450px;
+	margin-left: 70px;
+	margin-top: 20px;
 	border:1px solid #7F9DB9;
+	background-color: #becbb5;
+}
+.playback:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .playback .tt
 {
@@ -278,88 +266,41 @@ fieldset
 	border-collapse:collapse;
 	white-space:nowrap;
 }
-/*系统维护*/
-.maintain
+
+/*本地配置*/
+.localconfig
 {
-	width:450px;
-	padding:10px;
-	margin-left:10px;
+	float: right;
+	width:30%;
+	height: 450px;
+	margin-top: 20px;
+	margin-right: 70px;
 	border:1px solid #7F9DB9;
+	background-color: #becbb5;
 }
-.maintain .tt
+.localconfig:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.localconfig .tt
 {
-	width:60px;
+	width:125px;
 }
-.maintain .txt
+.localconfig .txt
 {
-	width:280px;
+	width:310px;
 }
-.maintain .btn
+.localconfig .btn
 {
 	width:45px;
 	height:22px;
 	line-height:18px;
 }
-.maintain .btn2
+.localconfig .sel
 {
-	width:100px;
-	height:22px;
-	line-height:18px;
+	width:120px;
 }
-.maintain .sel
-{
-	width:65px;
-}
-/*操作信息*/
-.operate
-{
-	width:450px;
-	padding:10px;
-	margin-left:10px;
-	border:1px solid #7F9DB9;
-}
-.operate .opinfo
-{
-	height:150px;
-	border:1px solid #7F9DB9;
-	overflow:auto;
-}
-/*事件回调*/
-.callback
-{
-	width:450px;
-	padding:10px;
-	margin-left:10px;
-	border:1px solid #7F9DB9;
-}
-.callback .cbinfo
-{
-	height:114px;
-	border:1px solid #7F9DB9;
-	overflow:auto;
-}
-/*IP解析*/
-.ipparse
-{
-	width:480px;
-	padding:10px;
-	border:1px solid #7F9DB9;	
-}
-.ipparse .tt
-{
-	width:100px;
-}
-.ipparse .txt
-{
-	width:130px;
-}
-.ipparse .btn
-{
-	width:90px;
-	height:22px;
-	line-height:18px;
-}
-.ipparse .sel
-{
-	width:130px;
-}
+
+
+
+
+
